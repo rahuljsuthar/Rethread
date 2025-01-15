@@ -1,0 +1,181 @@
+/* Reset default margins and padding for body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Poster container styling */
+.poster {
+    background-color: #212121;
+    padding: 20px 0;
+}
+
+/* Poster image styling */
+.poster img {
+    /* width: 100%; */
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Title styling */
+.title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* Container for products */
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling individual product blocks */
+.pro {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(66, 57, 238, 0.1);
+    width: 280px;
+    min-height: 360px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Hover effect on product card */
+.pro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(66, 57, 238, 0.2);
+}
+
+/* Product image styling */
+.img {
+    width: 240px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Product description styling */
+.imgdesc {
+    margin-top: 15px;
+}
+
+/* Product type and brand text styling */
+.imgdesc h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.imgdesc h2 a {
+    color: #2735d9;
+    transition: color 0.3s ease;
+}
+
+.imgdesc h2 a:hover {
+    color: #1d1db1;
+}
+
+/* Button styling for more info link */
+.imgdesc h4 {
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.imgdesc h4:hover {
+    background-color: #357ab7;
+}
+
+/* Pagination container styling */
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+/* Pagination links styling */
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Pagination hover effect */
+.pagination a:hover {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* Pagination visited link styling */
+.pagination a:visited {
+    color: #1d1db1;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pro {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pagination a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .pro {
+        width: 95%;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+}

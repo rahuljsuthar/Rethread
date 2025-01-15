@@ -1,0 +1,120 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Main Container */
+.main {
+    width: 90%;
+    max-width: 600px;
+    margin: 5% auto;
+    background-color: #f0f8ff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* Signup Section */
+.sign-up h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    display: block;
+}
+
+.form-group input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.form-group input:focus {
+    border-color: #4a69bd;
+    box-shadow: 0 0 10px rgba(74, 105, 189, 0.5);
+}
+
+/* Button */
+.btn {
+    margin-top: 20px;
+    background: #ff6b6b;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ee5253;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(238, 82, 83, 0.6);
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        padding: 30px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .btn {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url(bg.png);
+        background-repeat: no-repeat;
+        background-position: 95% -20%;
+        background-size: 40%;
+    }
+}
