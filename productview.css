@@ -1,0 +1,236 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+a,
+button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #444;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+.header-right .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.header-right .btn:hover {
+    background-color: #45a049;
+}
+
+/* Product Details Section */
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.product-image img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-info {
+    max-width: 600px;
+}
+
+.product-info h2,
+.product-info h3,
+.product-info h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.product-info ul {
+    margin-bottom: 20px;
+}
+
+.product-info ul li {
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    margin-bottom: 20px;
+}
+
+.product-info button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-info button:hover {
+    background-color: #45a049;
+}
+
+/* Product Additional Info */
+.product-additional-info,
+.product-reviews {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-reviews .review {
+    margin-bottom: 20px;
+}
+
+.product-reviews h4,
+.product-additional-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links,
+.footer-subscription,
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-links a,
+.footer-subscription a {
+    color: white;
+    margin-right: 15px;
+}
+
+.footer-subscription input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.footer-social .social-icons {
+    font-size: 1.5rem;
+}
+
+.footer-social .social-icons a {
+    color: white;
+    margin-right: 10px;
+}
+
+.footer-social .social-icons a:hover {
+    color: #4CAF50;
+}

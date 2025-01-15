@@ -1,0 +1,105 @@
+  /* General styles */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+  }
+
+  .cont {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: auto;
+      padding: 20px;
+  }
+
+  .pro {
+      box-shadow: 2px 2px 30px rgba(66, 57, 238, 0.2);
+      border: 1px solid #ddd;
+      margin: 20px;
+      border-radius: 15px;
+      width: 40%;
+      background-color: #fff;
+      transition: transform 0.3s, background-color 0.3s;
+      overflow: hidden;
+  }
+
+  .pro:hover {
+      background-color: #f0f8ff;
+      transform: translateY(-5px);
+  }
+
+  .img {
+      display: block;
+      margin: 20px auto;
+      width: 85%;
+      border-radius: 10px;
+  }
+
+  .imgdesc {
+      text-align: center;
+      padding: 10px;
+  }
+
+  .imgdesc a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+  }
+
+  .imgdesc a:hover {
+      text-decoration: underline;
+  }
+
+  .tit {
+      padding: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+  }
+
+  .price {
+      border-top: 1px solid #ddd;
+      padding: 20px;
+      font-size: 1.1rem;
+      text-align: center;
+  }
+
+  .seller {
+      border-top: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .btn {
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+
+  .btn:hover {
+      background-color: #0056b3;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 1116px) {
+      .pro {
+          width: 600px;
+      }
+  }
+
+  @media (max-width: 405px) {
+      .pro {
+          width: 90%;
+          margin: 10px 0;
+      }
+  }
